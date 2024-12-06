@@ -1,0 +1,121 @@
+/* General body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  color: #333;
+  margin: 0;
+  height: 100vh; /* Ensures the body takes up the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container styling */
+.container {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading and description styling */
+h1 {
+  color: #2b6cb0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin: 10px 0 20px;
+}
+
+/* Click counter styling */
+h2 {
+  margin-top: 10px;
+  color: #805ad5;
+  font-size: 1.5rem;
+}
+
+/* Grid container styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: #edf2f7;
+  border: 2px solid #cbd5e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  border-color: #4a5568;
+}
+
+.box.green {
+  background-color: #48bb78;
+  color: #ffffff;
+}
+
+.box.orange {
+  background-color: #f6ad55;
+  color: #ffffff;
+}
+
+/* Emoji animation for clicked boxes */
+.emoji {
+  animation: pop 0.5s ease-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Restart button styling */
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #2b6cb0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.restart-btn:hover {
+  background-color: #2c5282;
+}
+
+.restart-btn:active {
+  transform: scale(0.95);
+}
